@@ -15,7 +15,7 @@ hpc$Date <- strptime(hpc$Date, "%d/%m/%Y")
 a <- paste(hpc$Date, hpc$Time, collapse = NULL)
 hpc$Time <- strptime(a,format="%Y-%m-%d %H:%M:%S")
 
-#Create the necessary file and print it to a png file
+#Create the necessary plot and print it to a png file
 
 png("plot1.png", width=480, height=480)
 hist(hpc$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (Kilowatts)")
