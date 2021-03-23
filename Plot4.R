@@ -1,4 +1,4 @@
-#Plot 4   
+#Plot 4
 
 library(tidyverse)
 
@@ -23,7 +23,7 @@ with(hpc, {
   plot(Time, Sub_metering_1, type = "l", col = "black", xlab = "", ylab = "Energy sub metering", cex.lab = .9)
   lines(Time, Sub_metering_2,  col = "red")
   lines(Time, Sub_metering_3, col = "blue")
-  legend( "topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),col=c("black","red","blue"), lty=c(1,1,1), cex = .8)
+  legend( "topright", c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),col=c("black","red","blue"), lty=c(1,1,1), cex = .9)
   
   plot(Time, Global_reactive_power, type = "l", xlab = "datetime", cex.lab = .9)
   
